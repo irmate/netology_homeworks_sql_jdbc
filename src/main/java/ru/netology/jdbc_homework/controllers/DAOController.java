@@ -18,7 +18,7 @@ public class DAOController {
     }
 
     @GetMapping("/products/fetch-product")
-    public List<String> getProductName(@PathParam("name") String name) {
+    public List getProductName(@PathParam("name") String name) {
         return daoService.getProductName(name);
     }
 }

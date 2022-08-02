@@ -13,7 +13,7 @@ public class DAOService {
         this.daoRepository = daoRepository;
     }
 
-    public List<String> getProductName(String name) {
+    public List getProductName(String name) {
         return daoRepository.getProductName(name);
     }
 }
